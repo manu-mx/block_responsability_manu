@@ -1,4 +1,4 @@
-# 🧩 Chain of Responsibility - Ejemplo en Python
+# 🧩 Chain of Responsibility - Ejemplo en Python - Manu
 
 **Ejemplo**: Sistema de tickets de soporte técnico con tres niveles de atención.
 
