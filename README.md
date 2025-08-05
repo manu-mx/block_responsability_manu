@@ -1,12 +1,26 @@
-# 🛠 Chain of Responsibility (Cadena de Responsabilidad) - Patrón de Diseño
+# 🧩 Chain of Responsibility - Ejemplo en Python
 
-**Ejemplo en Python**: Sistema de Soporte Técnico con Manejadores en Cadena.
+**Ejemplo**: Sistema de tickets de soporte técnico con tres niveles de atención.
 
-## 📌 Descripción
-Implementación del patrón **Chain of Responsibility** donde una solicitud (ticket de soporte) pasa por una cadena de manejadores hasta que uno la procesa o la cadena termina. Cada manejador decide si puede resolver el problema o lo delega al siguiente nivel.
+## 🛠️ Cómo funciona
+1. **Cadena de manejo**:
+   - Soporte Básico → Soporte Avanzado → Especialista
+2. **Cada nivel atiende tickets según su complejidad**:
+   - Básico: Nivel 1
+   - Avanzado: Nivel 3
+   - Especialista: Nivel 5
+3. **Si ningún nivel puede atenderlo**, se marca como derivado
 
-## 🏗 Estructura del Código
+## 📋 Resultado esperado
 ```plaintext
-.
-├── README.md
-└── chain_of_responsibility.py
+Nuevo ticket (Nivel 1): No puedo iniciar sesión.
+[Soporte Básico] Resuelto: 'No puedo iniciar sesión.'
+
+Nuevo ticket (Nivel 3): Error al conectar a la base de datos.
+[Soporte Avanzado] Resuelto: 'Error al conectar a la base de datos.'
+
+Nuevo ticket (Nivel 5): Fallo crítico en el servidor.
+[Especialista] Resuelto: 'Fallo crítico en el servidor.'
+
+Nuevo ticket (Nivel 6): Bug en el núcleo del sistema.
+[Especialista] Ticket demasiado complejo: 'Bug en el núcleo del sistema.' (Derivado a desarrollo)
