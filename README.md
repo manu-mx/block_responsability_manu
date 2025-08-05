@@ -2,7 +2,7 @@
 
 **Ejemplo**: Sistema de tickets de soporte técnico con tres niveles de atención.
 
-🔗 **[Ver código completo en GitHub](https://github.com/manu-mx/block_responsability_manu/block_responsability_pi1.py)**
+🔗 **[Ver código completo en GitHub](https://github.com/manu-mx/block_responsability_manu/blob/main/block_responsability_pi1.py)**
 
 ## 🛠️ Cómo funciona
 1. **Cadena de manejo**:
